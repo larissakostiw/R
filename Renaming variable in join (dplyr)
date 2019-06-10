@@ -1,0 +1,8 @@
+---
+master_revenue_1<-master_revenue %>%
+  left_join(select(product_table_1, ProductId, PRODUCT_FLAG, ProductName), 
+            by=c("ProductId"="ProductId"),
+            suffix=c("_original", "_new")) #Adds suffices to remind us what is from what
+ ---           
+            
+            
